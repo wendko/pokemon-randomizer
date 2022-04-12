@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sprites.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="mainTextArea">
+            <div class="pkmn"></div>
+            <h1 id="currentPokemon"></h1>
+            <div class="pkmn"></div>
+        </div>
+      <div class="btnGroup">
+          <button class="btnPokemon btnPokemon--fire" id="btnNext">Next</button>
+          <button class="btnPokemon btnPokemon--water" id="btnSkip">Skip</button>
+          <button class="btnPokemon btnPokemon--grass" id="btnReset">Reset</button>
+      </div>
+      <div>
+        <span id="remainingCount"></span>
+        Pokemon left
+      </div>
+    </div>
+    <script src="gen1.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

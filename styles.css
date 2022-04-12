@@ -1,0 +1,108 @@
+@font-face {
+  font-family: PokemonSolid;
+  src: url(./assets/Pokemon_Solid.ttf);
+}
+
+body {
+    background: #3848c0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 16px);
+  background-color: whitesmoke;
+  box-shadow: inset -8px -8px #f2c10f, inset 8px 8px #e6412c;
+}
+
+.mainTextArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body, button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#currentPokemon {
+  font-size: 2rem;
+  font-family: PokemonSolid;
+  letter-spacing: 0.25rem;
+  color: #f2c10f;
+  --blue: #3062a8;
+    text-shadow: 3px 5px var(--blue), -1px -1px var(--blue), -1px 3px var(--blue), 1px -1px var(--blue);
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.btnPokemon {
+  padding: 10px;
+  border: 10px solid black;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin: 0.5rem;
+  width: 8rem;
+  opacity: 0.8;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btnPokemon:not([disabled]):focus {
+  outline: 0.3rem solid rgb(85, 85, 85);
+}
+
+.btnPokemon:not([disabled]):hover {
+  opacity: 1;
+  transform: translateY(-0.15rem);
+  box-shadow: 0 0.3rem black;
+}
+
+.btnPokemon[disabled] {
+  opacity: 0.5;
+  filter: grayscale();
+}
+
+.btnPokemon:active {
+  transform: translateY(0rem);
+}
+
+.btnPokemon--fire {
+  background: #eede7b;
+  color: #1c4153;
+  border-top-color: #e6412c;
+  border-right-color: #eb8328;
+  border-bottom-color: #833118;
+  border-left-color: #cd5241;
+}
+
+.btnPokemon--water {
+  background: #cdcdd5;
+  color: #5a3918;
+  border-top-color: #5a8acd;
+  border-right-color: #94ace6;
+  border-bottom-color: #193962;
+  border-left-color: #3163ac;
+}
+
+.btnPokemon--grass {
+  background: #f7bfb4;
+  color: #1c4149;
+  border-top-color: #6ab422;
+  border-right-color: #63cc94;
+  border-bottom-color: #245423;
+  border-left-color: #46945c;
+}
+
+@media only screen and (max-width: 515px) {
+    .btnGroup {
+        flex-direction: column;
+      }
+}
