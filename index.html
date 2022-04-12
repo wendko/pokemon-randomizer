@@ -5,33 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Randomizer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="sprites.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sprites.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-
     <div class="container">
-        <div class="mainTextArea">
-            <div class="pkmn"></div>
-            <h1 id="currentPokemon"></h1>
-            <div class="pkmn"></div>
-        </div>
+      <div class="mainTextArea">
+        <div class="pkmn"></div>
+        <h1 id="currentPokemon"></h1>
+        <div class="pkmn"></div>
+      </div>
       <div class="btnGroup">
-          <button class="btnPokemon btnPokemon--fire" id="btnNext">Next</button>
-          <button class="btnPokemon btnPokemon--water" id="btnSkip">Skip</button>
-          <button class="btnPokemon btnPokemon--grass" id="btnReset">Reset</button>
+        <button class="btnPokemon btnPokemon--fire" id="btnNext">Next</button>
+        <button class="btnPokemon btnPokemon--water" id="btnSkip">Skip</button>
+        <button class="btnPokemon btnPokemon--grass" id="btnReset">
+          Reset
+        </button>
       </div>
       <div>
         <span id="remainingCount"></span>
         Pokemon left
       </div>
+      <div>
+        <span id="caughtCount"></span>
+        Pokemon caught!
+      </div>
+      <div id="caughtPokemon"></div>
     </div>
     <script src="gen1.js"></script>
     <script src="index.js"></script>

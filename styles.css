@@ -106,3 +106,29 @@ body, button {
         flex-direction: column;
       }
 }
+
+#caughtPokemon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    bottom: 24px;
+    position: absolute;
+    max-height: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border: 2px solid #80a391;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#caughtPokemon > span {
+    margin-right: 2px;
+}
+
+#caughtPokemon > span::before {
+    content: "";
+    background: url(./assets/favicon/favicon-16x16.png);
+    padding: 0px 8px;
+    margin-right: 5px;
+}
